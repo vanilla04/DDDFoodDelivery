@@ -1,19 +1,17 @@
 package dddfooddelivery.domain;
 
+import dddfooddelivery.domain.*;
 import dddfooddelivery.infra.AbstractEvent;
-import lombok.Data;
+import lombok.*;
 import java.util.*;
-
-
 @Data
-public class OrderRejected extends AbstractEvent {
+@ToString
+public class Delivered extends AbstractEvent {
 
     private Long id;
     private Long orderId;
-    private Long custumerId;
-    private Long foodId;
-    private Integer qty;
-    private Long storeId;
     private String address;
     private String status;
 }
+
+

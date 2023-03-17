@@ -1,6 +1,6 @@
 package dddfooddelivery.infra;
 
-import dddfooddelivery.CostumerApplication;
+import dddfooddelivery.CustomerApplication;
 import dddfooddelivery.config.kafka.KafkaProcessor;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -32,7 +32,7 @@ public class AbstractEvent {
         /**
          * spring streams 방식
          */
-        KafkaProcessor processor = CostumerApplication.applicationContext.getBean(
+        KafkaProcessor processor = CustomerApplication.applicationContext.getBean(
             KafkaProcessor.class
         );
         MessageChannel outputChannel = processor.outboundTopic();

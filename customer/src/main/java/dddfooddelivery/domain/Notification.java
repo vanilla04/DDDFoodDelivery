@@ -1,6 +1,6 @@
 package dddfooddelivery.domain;
 
-import dddfooddelivery.CostumerApplication;
+import dddfooddelivery.CustomerApplication;
 import javax.persistence.*;
 import java.util.List;
 import lombok.Data;
@@ -38,7 +38,7 @@ public class Notification  {
 
 
     public static NotificationRepository repository(){
-        NotificationRepository notificationRepository = CostumerApplication.applicationContext.getBean(NotificationRepository.class);
+        NotificationRepository notificationRepository = CustomerApplication.applicationContext.getBean(NotificationRepository.class);
         return notificationRepository;
     }
 
