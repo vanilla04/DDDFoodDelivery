@@ -1,11 +1,11 @@
 package dddfooddelivery.domain;
 
+import dddfooddelivery.domain.*;
 import dddfooddelivery.infra.AbstractEvent;
-import lombok.Data;
+import lombok.*;
 import java.util.*;
-
-
 @Data
+@ToString
 public class CookFinished extends AbstractEvent {
 
     private Long id;
@@ -17,3 +17,5 @@ public class CookFinished extends AbstractEvent {
     private String address;
     private String status;
 }
+
+
